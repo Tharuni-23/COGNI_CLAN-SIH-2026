@@ -1,17 +1,23 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual environments
+# Python virtual environment
 .venv/
 venv/
 env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
 
 # Environment variables / secrets
 .env
 .env.*
 !.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
 # IDE
 .vscode/
@@ -21,13 +27,19 @@ env/
 .DS_Store
 Thumbs.db
 
-# Python cache
+# Logs
+*.log
+
+# Database/local files
+*.db
+*.sqlite
+*.sqlite3
+
+# Python test/cache
 .pytest_cache/
 .mypy_cache/
 
-# ML caches
-.cache/
-huggingface_cache/
-
-# Logs
-*.log
+# Build files
+dist/
+build/
+*.egg-info/
